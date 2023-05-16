@@ -7,6 +7,8 @@ vek int not null,
 primary key (id)
 );
 
+
+
 set autocommit = 0;
 
 delimiter //
@@ -21,5 +23,8 @@ IN IN_vek int)
 	end//
 delimiter ;
 
-call PRC_Insert_Uzivatel('pavel',12);
+call PRC_Insert_Uzivatel('Martin',12);
 select * from Uzivatel;
+
+select * from testovaci;
+alter table testovaci drop column hezky;
